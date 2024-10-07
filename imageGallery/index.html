@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Gallery</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./assets/bootstrap-grid.min.css.map" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-6">UNSPLASH APP</div>
+          <input class="col-4  my-search" type="search">
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="image col-3">
+
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <a
+            href="https://rs.school/courses/javascript-ru"
+            class="school__link"
+          >
+            <img src="./assets/img/rs-school-logo.svg" alt="RSSchool link"
+          /></a>
+          <a href="https://github.com/zhanybekzh" class="footer__author-link">
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </a>
+          <div class="date-creation">2024</div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>

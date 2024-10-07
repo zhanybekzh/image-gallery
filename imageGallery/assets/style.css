@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+  color: white;
+}
+body{
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  transition: background-image 1s ease-in-out;
+  position: relative;
+}
+header {
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+}
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background: linear-gradient(90deg, rgba(255,190,8,1) 0%, #febb59 100%);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  min-height: 70px;
+}
+.footer .footer__author-link {
+  display: block;
+  color: black;
+  margin-left: 30px;
+}
+.footer .school__link {
+  display: block;
+}
+.footer .school__link img {
+  display: block;
+  width: 100px;
+}
+.footer .date-creation {
+  text-align: center;
+  margin-left: auto;
+  color: #000000;
+}
+
+.image {
+  
+}
