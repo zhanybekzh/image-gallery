@@ -1,8 +1,15 @@
+@font-face {
+  font-family: Comfortaa-Regular;
+  src: url("./assets/fonts/Comfortaa-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: black;
   color: white;
 }
-body{
+body {
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -22,9 +29,11 @@ header {
 footer {
   margin-top: auto;
   padding: 20px;
-  background: linear-gradient(90deg, rgba(255,190,8,1) 0%, #febb59 100%);
+  background: linear-gradient(90deg, rgba(255, 190, 8, 1) 0%, #febb59 100%);
 }
-
+header h2 {
+  margin-bottom: 0;
+}
 .footer {
   display: flex;
   align-items: center;
@@ -49,6 +58,88 @@ footer {
   color: #000000;
 }
 
-.image {
-  
+.fa-camera,
+.fa-search,
+.fa-times {
+  color: gray;
+}
+.input-container {
+  position: relative;
+}
+.search-input {
+  width: 100%;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #dddddd;
+}
+.search-input:focus {
+  box-shadow: 0 0 5px gray;
+  border: 1px solid gray;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.search-icon:hover {
+  color: black;
+}
+.clear-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.clear-btn:hover {
+  color: black;
+}
+.footer-text {
+  font-weight: 400;
+  size: 16px;
+}
+#image-container {
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.image-item {
+  aspect-ratio: 16 / 9;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.massage-item {
+  padding: 60px 0;
+}
+.header-name {
+  text-align: center;
+  margin: 20px 0;
+}
+@media (min-width: 768px) {
+  .header-name {
+    text-align: left;
+  }
+  #image-container {
+    grid-template-columns: repeat(2, 1fr); 
+    gap:20px;
+  }
+}
+@media (min-width: 1200px) {
+  #image-container {
+    grid-template-columns: repeat(3, 1fr); 
+    gap:20px;
+  }
+}
+@media (min-width: 1440px) {
+  #image-container {
+    grid-template-columns: repeat(6, 1fr); 
+    gap:20px;
+  }
 }
