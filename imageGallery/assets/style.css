@@ -1,0 +1,145 @@
+@font-face {
+  font-family: Comfortaa-Regular;
+  src: url("./assets/fonts/Comfortaa-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  transition: background-image 1s ease-in-out;
+  position: relative;
+}
+header {
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+}
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background: linear-gradient(90deg, rgba(255, 190, 8, 1) 0%, #febb59 100%);
+}
+header h2 {
+  margin-bottom: 0;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  min-height: 70px;
+}
+.footer .footer__author-link {
+  display: block;
+  color: black;
+  margin-left: 30px;
+}
+.footer .school__link {
+  display: block;
+}
+.footer .school__link img {
+  display: block;
+  width: 100px;
+}
+.footer .date-creation {
+  text-align: center;
+  margin-left: auto;
+  color: #000000;
+}
+
+.fa-camera,
+.fa-search,
+.fa-times {
+  color: gray;
+}
+.input-container {
+  position: relative;
+}
+.search-input {
+  width: 100%;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #dddddd;
+}
+.search-input:focus {
+  box-shadow: 0 0 5px gray;
+  border: 1px solid gray;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.search-icon:hover {
+  color: black;
+}
+.clear-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.clear-btn:hover {
+  color: black;
+}
+.footer-text {
+  font-weight: 400;
+  size: 16px;
+}
+#image-container {
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.image-item {
+  aspect-ratio: 16 / 9;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.massage-item {
+  padding: 60px 0;
+}
+.header-name {
+  text-align: center;
+  margin: 20px 0;
+}
+@media (min-width: 768px) {
+  .header-name {
+    text-align: left;
+  }
+  #image-container {
+    grid-template-columns: repeat(2, 1fr); 
+    gap:20px;
+  }
+}
+@media (min-width: 1200px) {
+  #image-container {
+    grid-template-columns: repeat(3, 1fr); 
+    gap:20px;
+  }
+}
+@media (min-width: 1440px) {
+  #image-container {
+    grid-template-columns: repeat(6, 1fr); 
+    gap:20px;
+  }
+}
